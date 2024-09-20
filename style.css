@@ -1,0 +1,132 @@
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Corrected font family usage */
+    background-color: hsl(234, 29%, 20%);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-wrap {
+    width: 700px;
+    height: 450px;
+    background-color: wheat;
+    display: flex;
+    margin-top: 5%;
+    border-radius: 18px;
+    color: hsl(234, 29%, 20%);
+}
+
+#left {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5%;
+}
+
+.text-wrap {
+    padding-top: 5px;
+    margin-left: 8%;
+}
+
+.icon-wrap {
+    margin-top: 5%;
+    margin-left: 8%;
+}
+
+ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.icon-img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+li {
+    margin-left: 2%;
+    padding-top: 3%;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+#right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-img {
+    width: 90%; /* Make sure the image fills the container */
+    height: 90%;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 3%;
+}
+
+/* Label for the email field */
+#Additional{
+    margin-left: 40%;
+    color: red;
+}
+label {
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #333;
+}
+
+/* Email input field styling */
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+    background-color: #252849; /* Dark navy blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(4, 100%, 67%);
+}
+
+/* Font-face declaration */
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

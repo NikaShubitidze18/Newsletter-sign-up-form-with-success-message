@@ -1,0 +1,48 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: hsl(234, 29%, 20%);
+    font-family: Roboto;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
+}
+.succsesful{
+        width: 380px;
+        height: 360px;
+        background-color: white;
+        box-sizing: border-box;
+        border-radius: 18px;
+}
+.item{
+    display: flex;
+    width: 100%;
+    padding-left: 5%;
+    flex-direction: column;
+    margin-top: 8%;
+    color: hsl(234, 29%, 20%);
+}
+.button-wrap{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 5%;
+}
+.button-wrap button{
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    border: 1px solid hsl(234, 29%, 20%);
+    cursor: pointer;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
