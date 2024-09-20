@@ -1,4 +1,5 @@
 /* Reset margins and paddings */
+/* Reset margins and paddings */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +21,7 @@ main {
 #main-wrap {
     width: 700px;
     height: 450px;
-    background-color: wheat;
+    background-color: white;
     display: flex;
     margin-top: 5%;
     border-radius: 18px;
@@ -87,10 +88,11 @@ li {
 }
 
 /* Label for the email field */
-#Additional{
+#Additional {
     margin-left: 40%;
     color: red;
 }
+
 label {
     margin-bottom: 5px;
     font-size: 12px;
@@ -129,4 +131,53 @@ button:hover {
     src: url('fonts/Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    #main-wrap {
+        width: 90%;
+        height: auto;
+        flex-direction: column; /* Stack elements vertically */
+        padding: 20px;
+        margin-top: 10%;
+    }
+
+    #left, #right {
+        width: 100%; /* Take up full width on mobile */
+        margin: 0; /* Remove margins for better fit */
+    }
+
+    .text-wrap, .icon-wrap {
+        margin-left: 0; /* Align to the edge on mobile */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    li {
+        margin-left: 0;
+    }
+
+    .main-img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center the image */
+        margin-top: 10px;
+    }
+
+    .form-container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #Additional {
+        margin-left: 0;
+        text-align: center; /* Center on mobile */
+    }
+
+    button {
+        width: 100%;
+        padding: 12px; /* Slightly smaller padding on mobile */
+    }
 }
